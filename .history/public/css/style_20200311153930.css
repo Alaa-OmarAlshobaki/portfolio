@@ -1,0 +1,34 @@
+a {
+  color: #32dbc6;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #1da493;
+  text-decoration: none;
+}
+.social-media li {
+  display: inline-block;
+}
+.site-navigation {
+  margin-bottom: 0px;
+  z-index: 1999;
+  position: relative;
+
+  background: #fff;
+}
+.site-navbar .site-navigation .site-menu > li {
+  display: inline-block;
+}
+.site-navbar .site-logo {
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  left: 0;
+  top: -5px;
+}
+.container .row .col .h1{
+    line-height: 0.8!important;
+}
+.logo-img {
+  width: 100%;
+}

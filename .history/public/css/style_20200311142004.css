@@ -1,0 +1,19 @@
+a {
+  color: #32dbc6;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #1da493;
+  text-decoration: none;
+}
+.social-media li {
+  display: inline-block;
+}
+.site-navigation{
+    margin-bottom: 0px;
+    z-index: 1999;
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
