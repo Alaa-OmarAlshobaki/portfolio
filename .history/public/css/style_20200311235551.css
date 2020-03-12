@@ -1,0 +1,16 @@
+a {
+  color: #32dbc6;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 15px;
+}
+a:hover {
+  color: #1da493;
+  text-decoration: none;
+}
+.navbar .container .nav > li {
+  display: inline-block;
+}
+.navbar-nav{
+  flex-direction: column;
+}

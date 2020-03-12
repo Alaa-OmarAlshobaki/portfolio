@@ -1,0 +1,28 @@
+a {
+  color: #32dbc6;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 15px;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+nav a img{
+  width: 10%;
+}
+
+.navbar .navbar-brand{
+  font-family: "Dancing Script", cursive;}
+
+  .bg-color {
+    background-color: #335750!important;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 20px;
+}
+.navbar-toggler {
+ 
+  border: 1px solid #43ad97a1;
+
+}
