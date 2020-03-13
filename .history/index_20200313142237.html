@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/img/cv.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="public/OwlCarousel2-2.3.4/docs/assets/css/animate.css"> -->
+    <link rel="stylesheet" href="public/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="public/owlcarousel/owl.theme.default.min.css">
+    <!--datepicker bootstrap-->
+    <link rel="stylesheet" href="public/css/bootstrap-datepicker.css">
+    <link href="public/fonts/fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    
+    
+    <link rel="stylesheet" href="public/fonts/flaticon/font/flaticon.css">
+  
+    <link rel="stylesheet" href="public/css/aos.css">
+    <link href="public/css/jquery-ui.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <script defer src="public/fonts/fontawesome-free-5.12.1-web/js/all.js"></script> <!--load all styles -->
+   
+    <script src="public/js/jquery.js" ></script>
+    <script src="public/jquery.min.js"></script>
+    <script src="public/owlcarousel/owl.carousel.min.js"></script>
+    <script src="public/js/jquery-ui.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      $("document").ready(function(){
+        // Wrap every letter in a span
+// var textWrapper = document.querySelector('.ml9 .letters');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+// anime.timeline({loop: true})
+//   .add({
+//     targets: '.ml9 .letter',
+//     scale: [0, 1],
+//     duration: 1500,
+//     elasticity: 600,
+//     delay: (el, i) => 45 * (i+1)
+//   }).add({
+//     targets: '.ml9',
+//     opacity: 0,
+//     duration: 1000,
+//     easing: "easeOutExpo",
+//     delay: 1000
+//   });
+
+
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+      });
+
+
+
+
+      
+    </script>
+    
+  
+ 
+    <title>Portfolio</title>
+   
+    </style>
+  </head>
+  <body>
+   
+
+
+<!-- start section header -->
+<section>
+   <!--Navbar-->
+   <nav class="navbar navbar-expand-lg  bg-color">
+    <a class="navbar-brand ml-5" href="#">
+      <img src="public/img/cv.png"  class="d-inline-block align-top" alt="">
+    <h1> Ala'a Omar</h1>
+    </a>
+    
+    <div class="container">
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+      
+
+          <li class="nav-item">
+            <a class="nav-link text-center m-3 " href="#home" ><span class="icon-home"></span><br>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center m-3" href="#"><span class="icon-contacts"></span><br>About me</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-center m-3" href="#workHistory"><span class="icon-work"></span><br>Work History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center m-3" href="#education"><span class="icon-graduation-cap"></span><br>Education</a>
+          </li>
+        
+         
+
+         
+
+        </ul>
+        <!-- Links -->
+
+      </div>
+      <!-- CTA -->
+
+    </div>
+
+  </nav>
+  <!--/.Navbar-->
+</section>
+<!-- end section header -->
+<!-- start section cover -->
+<section id="home">
+</div> <!-- END .site-navbar-wrap -->
+    
+<div class="site-blocks-cover" id="home-section">
+  <div class="img-wrap">
+    <div class="owl-carousel slide-one-item hero-slider">
+      <div class="slide">
+        <img src="public/img/alaa.jpeg"  alt="Image">  
+      </div>
+      <div class="slide">
+        <img src="public/img/alaa2.jpeg" alt="Image">  
+      </div>
+      <div class="slide">
+        <img src="public/img/alaa3.jpeg" alt="Image">  
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ml-auto align-self-center">
+        <div class="intro">
+          <div class="heading">
+            <h1 class="ml9">
+              <span class="text-wrapper">
+                <span class="letters">Full Stack php Developer</span>
+              </span>
+            </h1>
+          </div>
+          <div class="text">
+            <p class="sub-text mb-5"><p class="ml11">
+              <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">Self-motivated Web Developer with high level of experience working on multiple projects. Passionate and hardworking with penchant for meeting deadlines. Interested in role with company promoting best practices and offering diverse customer projects. </span>
+              </span>
+            </p></p>
+            <p><a href="#" target="_blank" class="btn btn-outline-primary btn-md">Start a project</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- END .site-blocks-cover -->
+</section>
+<!-- end section cover -->
+<!-- start section work history -->
+<section>
+  <div class="site-section" id="workHistory">
+    <div class="container ">
+      <div class="row  text-center mx-auto">
+        <h1 class="mb-5"><i class="fas fa-laptop-code"></i> WORK HISTORY</h1>
+        <div class="col-lg-10 ml-auto">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory">
+               
+                <h3>Web School ERP  <span class="fas fa-school"></span></h3>
+                <p>Digitizing scholastic institutions to survive in this Internet era with a myriad of
+                  benefits to excel in academics as well as management<br><span class="fab fa-laravel" style="font-size: 50px;color:#FA5882"></span></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/erpschool"target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory">
+                <h3>Receipt For Company <span class="fas fa-receipt"></span></h3>
+                <p>export pdf receipt for selwan tech company to Other destinations<br><span class="fab fa-laravel mt-5 mr-1" style="font-size: 50px; color:#FA5882"></span><span class="fab fa-php" style="font-size: 50px;color:#81BEF7"></span></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/voucherForCompany" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>My cup <span class="fas fa-glass-whiskey"></span></h3>
+                <p>Dashboard for my cup project <br><span class="fab fa-laravel mt-5" style="font-size: 50px;color:#FA5882"></span></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/mycup" target="_blank"  class="readmore">Learn more</a></p>
+              </div>
+            </div>
+           
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>My Decor</h3>
+                <p>The front end of the my decor projects<br><span class="fab fa-laravel mt-5 mr-1" style="font-size: 50px;color:#FA5882"></span><span class="fab fa-bootstrap " style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/my-Decore" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>PhotoPro</h3>
+                <p>front end photopro <span style="color:red">HTU </span> up skilling</span><br><span class="fab fa-bootstrap mt-5" style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/photoProBootstrap" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory">
+                <h3>Honey</h3>
+                <p>front end honey <span style="color:red">HTU </span> up skilling</span><br><span class="fab fa-bootstrap mt-5" style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/honey" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>University</h3>
+                <p>front end university <span style="color:red">HTU </span> up skilling</span><br><span class="fab fa-bootstrap mt-5" style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/colorlib" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>Model</h3>
+                <p>front end change model <span style="color:red">HTU </span> up skilling</span><br><span class="fab fa-bootstrap mt-5" style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span><img class="mb-4" width="20%" src="public/img/jq.png"></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/jquerychangreplaceModel" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>Casher</h3>
+                <p>front end calculate <span style="color:red">HTU </span> up skilling</span><br><span class="fab fa-bootstrap mt-5" style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span><img class="mb-4" width="20%" src="public/img/jq.png"></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/casherjquery" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>Game</h3>
+                <p>front end flip card <span style="color:red">HTU </span> up skilling</span><br><span class="fab fa-bootstrap mt-5" style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span><img class="mb-4" width="20%" src="public/img/jq.png"></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/gameJquery" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>Login</h3>
+                <p>front end change img according event <span style="color:red">HTU </span> up skilling</span><br><span class="fab fa-bootstrap mt-5" style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span><img class="mb-4" width="20%" src="public/img/jq.png"></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/loginJquery" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+              <div class="workHistory ">
+                <h3>Word Count</h3>
+                <p>word count and send message when count 5 word <span style="color:red">HTU </span>up skilling<br><span class="fab fa-bootstrap mt-5" style="font-size: 50px; color:#A901DB"></span><span class="fab fa-css3" style="font-size: 50px; color:#2E9AFE"></span><span class="fab fa-html5" style="font-size: 50px; color:#FE642E"></span><img class="mb-4" width="20%" src="public/img/jq.png"></p>
+                <p><a href="https://github.com/Alaa-OmarAlshobaki/wordcount-jquery" target="_blank" class="readmore">Learn more</a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- END .site-section -->
+
+  
+</section>
+<!-- end section work history -->
+<!-- start section education and training -->
+<section id="education">
+  <div class="site-section bg-light">
+    <div class="container">
+       <div class="row mb-5 ">
+        <div class="col-md-7  text-center mx-auto">
+      
+          <h2 class="title  mb-3"><i class="fas fa-graduation-cap"></i> Education & Training</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="education bg-white h-100">
+            <div class="mb-3">
+              <p><strong>The high school IT</strong><br> The high school specializes in IT with an average of 85.5</p>
+            </div>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="public/img/graduate.png" alt="Image" class="img-fluid ounded-circle">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">IT</span>
+                <span class="position">2009-2010</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="education bg-white h-100">
+            <div class="mb-3">
+              <p><strong>BA Al-Husain Bin Talal Univirsity</strong><br> Bachelor of Computer Science, Hussein Bin Talal University in Ma'an, with good grade</p>
+            </div>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="public/img/ahu.png" alt="Image" class="img-fluid ounded-circle">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">computer since</span>
+                <span class="position">2010-2014 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="education bg-white h-100">
+            <div class="mb-3">
+              <p><strong>Android University of Jordan</strong>course android in University of Jordan </p>
+            </div>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="public/img/University of Jordan.jpg" alt="Image" class="img-fluid ounded-circle">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">University of Jordan</span>
+                <span class="position">10 days</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="education bg-white h-100">
+            <div class="mb-3">
+              <p> <strong>Asp.net JordanBITS</strong><br> course training asp.net with c# </p>
+            </div>
+            <div class="d-flex align-items-center vcard">
+              <figure class="mb-0 mr-3">
+                <img src="public/img/jordanbits-training-center.png" alt="Image" class="img-fluid ounded-circle">
+              </figure>
+              <div class="vcard-text">
+                <span class="d-block">JordanBITS</span>
+                <span class="position">5/2013 - 7/2013</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- end section education and training -->
+<!-- start section Interests -->
+<section>
+  
+    
+  <div class="site-section" id="studio-section">
+    <div class="container">
+
+      <div class="row mb-5 ">
+        <div class="col-md-7 section-title text-center mx-auto">
+          <span class="sub-title mb-2 d-block">Photos</span>
+          <h2 class="title text-primary mb-3">Studio Gallery</h2>
+        </div>
+      </div>
+     
+      <div id="posts" class="row no-gutter">
+        <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d21.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d21.jpg">
+          </a>
+        </div>
+        <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d22.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d22.jpg">
+          </a>
+        </div>
+        <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d2.jpeg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d2.jpeg">
+          </a>
+        </div>
+        <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d11.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d11.jpg">
+          </a>
+        </div>
+
+        <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d12.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d12.jpg">
+          </a>
+        </div>
+
+        <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d13.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d13.jpg">
+          </a>
+        </div>
+
+        <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d14.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d14.jpg">
+          </a>
+        </div>
+
+        <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d15.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d15.jpg">
+          </a>
+        </div>
+
+        <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d16.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d16.jpg">
+          </a>
+        </div>
+
+        <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d17.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d17.jpg">
+          </a>
+        </div>
+        <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d2.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d2.jpg">
+          </a>
+        </div>
+
+        <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d20.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d20.jpg">
+          </a>
+        </div>
+
+        <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d18.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d18.jpg">
+          </a>
+        </div>
+
+        <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d19.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d19.jpg">
+          </a>
+        </div>
+        <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <a href="public/img/d1.jpg" class="item-wrap" data-fancybox="gal">
+            <span class="icon-search2"></span>
+            <img class="img-fluid" src="public/img/d1.jpg">
+          </a>
+        </div>
+        
+
+
+      </div>
+    </div>
+  </div> <!-- END .site-section -->
+
+</section>
+<!-- end section interests -->
+
+  </body>
+</html>
