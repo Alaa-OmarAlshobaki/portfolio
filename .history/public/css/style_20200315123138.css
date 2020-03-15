@@ -1,0 +1,382 @@
+/* animation for img in section experince */
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 100%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+
+/* animation slide section */
+.slideanim {
+  visibility:hidden;
+  visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+  visibility: visible;                  
+  animation: slide 2s;
+}
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(50%);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  } 
+}
+
+
+/* end animation slide */
+
+/* animation for photo when scroll */
+.inline-photo {
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: .25em;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  margin: 2em auto;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  max-width: 600px;
+  width: 90%;
+  will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  transform: rotateZ(-2deg);
+}
+/* end animation  */
+
+body{
+  font-family: 'Bellota', cursive;
+}
+
+/* style for header */
+
+
+a {
+  color: #32dbc6;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-family: 'Bellota', cursive;
+  
+  
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* logo */
+nav a img{
+  width: 20%;
+}
+
+.navbar .navbar-brand{
+  font-family: 'Dancing Script', cursive;
+}
+.navbar-toggler {
+ 
+  border: 1px solid #43ad97a1;
+
+}
+
+/* color bg nav */
+  .bg-color {
+    background-color: #335750!important;
+}
+/* style icon */
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 20px;
+
+}
+
+/* style btn */
+.btn-outline-primary {
+  color: #32dbc6 !important;
+  border-color: #32dbc6 !important;
+}
+.btn-outline-primary:hover {
+  background-color: #335750;
+}
+
+/* section style for home style  */
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 2em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml11 {
+ 
+ 
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+.site-blocks-cover {
+  margin-top: 0px; }
+  /* Blocks */
+.site-blocks-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative; }
+  .site-blocks-cover.overlay {
+    position: relative; }
+    .site-blocks-cover.overlay:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.2); }
+  .site-blocks-cover, .site-blocks-cover > .container > .row {
+    min-height: 600px;
+    height: calc(100vh); }
+  .site-blocks-cover.inner-page, .site-blocks-cover.inner-page > .container > .row {
+    min-height: 600px;
+    height: calc(80vh); }
+  .site-blocks-cover h1 {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    line-height: 1; }
+    @media (max-width: 991.98px) {
+      .site-blocks-cover h1 {
+        color: #43b099;
+        font-size: 3rem; } }
+  .site-blocks-cover .sub-text {
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 300; }
+    @media (max-width: 991.98px) {
+      .site-blocks-cover .sub-text {
+        color: #000; } }
+  .site-blocks-cover .img-wrap {
+    position: absolute;
+    z-index: -1;
+    width: calc(100% - 50%);
+    top: 0;
+    
+    height: 100%;
+    /* z-index: 2; */
+    right: 50%;
+    min-height: 600px;
+    overflow: hidden;
+    border-bottom-right-radius: 200px; }
+    @media (max-width: 991.98px) {
+      .site-blocks-cover .img-wrap {
+        
+        width: 100%;
+        right: 0%;
+        top: 0; }
+        .site-blocks-cover .img-wrap .hero-slider:before {
+          position: absolute;
+          content: "";
+          background: #fff;
+          opacity: .5;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0; } }
+    .site-blocks-cover .img-wrap .slide {
+      height: 100vh;
+      position: relative; }
+      .site-blocks-cover .img-wrap .slide img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+  .site-blocks-cover .intro {
+    z-index: 3;
+    position: relative; }
+    .site-blocks-cover .intro .heading {
+      margin-left: -150px; }
+      @media (max-width: 991.98px) {
+        .site-blocks-cover .intro .heading {
+          margin-left: 0; } }
+    .site-blocks-cover .intro .text {
+      padding-left: 50px; }
+      @media (max-width: 991.98px) {
+        .site-blocks-cover .intro .text {
+          padding-left: 0; } }
+/* 
+      start section work history */
+      .site-section {
+        padding: 4.5em 0; }
+        @media (min-width: 768px) {
+          .site-section {
+            padding: 7em 0; } }
+        .site-section.site-section-sm {
+          padding: 4em 0; }
+      
+     
+          .workHistory {
+            height: 300px;
+            padding: 30px;
+            background: #fff;
+            border: 1px solid #eee;
+            border-top: 2px solid #43ad97a1;
+            -webkit-transition: .3s all ease-in-out;
+            -o-transition: .3s all ease-in-out;
+            transition: .3s all ease-in-out;
+            position: relative;
+            top: 0;
+        }
+        .workHistory:hover, .workHistory:focus {
+          -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+          border: 1px solid transparent;
+          border-top: 2px solid #43ad97a1;
+          top: -2px;
+      }
+      .workHistory a:hover{
+        color:#43ad97a1;
+      }
+      .workHistory h3{
+       font-size: 18px;
+       font-weight: 900;
+       color:#43ad97a1;
+      }
+/* end section work history */
+/* start section education */
+.education{
+  padding: 30px;
+  color: #000;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+  font-style: italic; }
+  .education .vcard figure {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50px;
+    flex: 0 0 50px; }
+    .education .vcard figure img {
+      border-radius: 50%; }
+  .education .vcard .vcard-text {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2; }
+    .education.vcard .vcard-text .position {
+      color: #b3b3b3; }
+  .education strong {
+    font-weight: 400;
+    padding: .3rem 0;
+    background: #faf5bb; }
+   .size{
+     height: 757.98px;
+   }
+
+      /* end section intrest */
+      /* start section exper */
+      h3{
+        -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+        border: 1px solid transparent;
+        border-top: 2px solid #43ad97a1;
+        top: -2px;
+        cursor: pointer;
+      }
+      .expimg{
+
+        -webkit-box-shadow: 0 70px 50px -20px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 70px 50px -20px rgba(0, 0, 0, 0.4);
+       
+        top: -2px;
+      }
+      /* end section exp */
+      /* start section footer */
+      .footer-heading{
+        color:white
+      }
+  
+     
+    
+
